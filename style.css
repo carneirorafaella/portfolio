@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Zetta:wght@100..900&display=swap');
+
+
+:root{
+    --fonte-des: "Lexend Zetta"
+
+}
+
+
 @media (min-width: 320px) and (max-width: 700px){
 
     body{
@@ -15,35 +25,39 @@
     }
 
     nav{
+        font-family: var(--fonte-des);
         background-color: #280248;
         padding: 15px;
+        padding-bottom: 25px;
         border-radius: 3px;
     }
-    nav > p{
+    nav > div{
+        display: inline;
+        float: right;
         font-size: 13px;
         margin: 0px;
         text-align: right;
     }
 
-    nav > p:hover{
 
+
+    nav div > a{
+        margin-right: 20px;
+        padding: 5px;
     }
 
-    nav p > a{
-        padding-right: 20px;
-    }
-
-    nav > p > a:hover{
+    nav > div > a:hover{
         background-color: #ffffffe9;
         color: #280248;
-        padding: 5px;
-        padding-right: px;
+        margin-right: 20px;
+        border: 1px solid black;
         border-radius: 3px;
     }
 
 
 
     .perfil{ 
+        clear: both;
         padding-bottom: 65px;
         padding-left: 20px;
         margin: 20px;
@@ -51,7 +65,7 @@
 
     .perfil > p{
         float: right;
-        text-align: justify;
+        text-align: left;
         font-size: 12px;
     }
 
@@ -65,12 +79,14 @@
     }
 
     #redes{
+        font-family: var(--fonte-des);
         padding-left: 10px;
         color: white;
         clear: both;
         padding-top: 60px;
     }
     .redes{
+        
         padding-left: 10px;
         clear: both;
         display: flex;
@@ -116,6 +132,7 @@
     }
 
     #projetos{
+        font-family: var(--fonte-des);
         padding-top: 45px;
         margin: 50px;
     }
@@ -220,9 +237,7 @@
         text-align: right;
     }
 
-    nav > p:hover{
-
-    }
+    
 
     nav p > a{
         padding-right: 20px;
@@ -232,7 +247,7 @@
         background-color: #ffffffe9;
         color: #280248;
         padding: 5px;
-        padding-right: px;
+        margin-right: 20px;
         border-radius: 3px;
     }
 
@@ -414,21 +429,27 @@
         padding: 15px;
         border-radius: 3px;
     }
-    nav > p{
+    
+    nav > div{
+        display: inline;
+        float: right;
         font-size: 13px;
         margin: 0px;
         text-align: right;
     }
 
-    nav p > a{
-        padding-right: 20px;
+
+
+    nav div > a{
+        margin-right: 20px;
+        padding: 5px;
     }
 
-    nav > p > a:hover{
+    nav > div > a:hover{
         background-color: #ffffffe9;
         color: #280248;
-        padding: 5px;
-        padding-right: px;
+        margin-right: 20px;
+        border: 1px solid black;
         border-radius: 3px;
     }
 
@@ -607,26 +628,35 @@ body{
     nav{
         background-color: #280248;
         padding: 15px;
+        padding-bottom: 25px;
         border-radius: 3px;
     }
-    nav > p{
+    
+    nav > div{
+        display: inline;
+        float: right;
         font-size: 13px;
         margin: 0px;
         text-align: right;
     }
 
-    nav p > a{
-        padding-right: 20px;
+
+
+    nav div > a{
+        margin-right: 20px;
+        padding: 5px;
     }
 
-    nav > p > a:hover{
+    nav > div > a:hover{
         background-color: #ffffffe9;
         color: #280248;
-        padding: 5px;
-        padding-right: px;
+        margin-right: 20px;
+        border: 1px solid black;
         border-radius: 3px;
     }
 
+
+    
 
 
     .perfil{ 
@@ -769,8 +799,8 @@ body{
     }
 
     #social > img{
-        width: 178px;
-        height: 276px;
+        width: 176px;
+        height: 197px;
         margin-top: 7px;
         margin-bottom: 7px;
         border: 2px solid rgba(0, 0, 0, 0.929);
@@ -778,8 +808,8 @@ body{
     }
 
     #social > img:hover{
-        width: 197px;
-        height: 295px;
+        width: 190px;
+        height: 211px;
         
         
     }
