@@ -1,12 +1,26 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Zetta:wght@100..900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Zetta:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'Android';
+     src: url(idroid.otf) format('opentype');
+     font-weight: normal;}
+
+
 
 
 :root{
-    --fonte-des: "Lexend Zetta"
-
+    --fonte-des: "Catamaran";
+    --fonte-sec: "Sansation";
+    --fonte-android: "Android";
+    --fonte-cordel: "Passion One";
 }
 
 
@@ -22,13 +36,14 @@
     h1{
         color: white;
         padding-left: 10px;
+        margin: 10px;
     }
 
     nav{
         font-family: var(--fonte-des);
         background-color: #280248;
-        padding: 15px;
         padding-bottom: 25px;
+        padding-top: 5px;
         border-radius: 3px;
     }
     nav > div{
@@ -80,13 +95,14 @@
 
     #redes{
         font-family: var(--fonte-des);
+        font-weight: 400;
         padding-left: 10px;
         color: white;
         clear: both;
         padding-top: 60px;
     }
     .redes{
-        
+        font-family: var(--fonte-sec);
         padding-left: 10px;
         clear: both;
         display: flex;
@@ -99,7 +115,7 @@
         background-color: #200538;
         border-radius: 8px;
         padding: 10px;
-        width: 60px;
+        width: 70px;
         text-align: center;
         box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.219);
         
@@ -133,8 +149,10 @@
 
     #projetos{
         font-family: var(--fonte-des);
+        font-weight: 400;
         padding-top: 45px;
-        margin: 50px;
+        margin-top: 50px;
+        
     }
 
     .card2{
@@ -146,65 +164,93 @@
         text-align: center;
         box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.219);
         margin-left: 25px;
-    
-        
+
     }
 
 
     #android{
         display: inline-block;
-        
     }
 
     #android > img{
         width: 80px;
+        height: 93px;
         border: 1.5px solid rgba(0, 0, 0, 0.929);
         border-radius: 4px;
     }
 
     #android > img:hover{
         width: 85px;
-        
-        
     }
+
+    #android > h2{
+        font-family: var(--fonte-android);
+        font-size: 20px;
+        margin: 3px;
+    }
+
 
 
     #cordel{
         display: inline-block;
-        
     }
 
     #cordel > img{
         width: 80px;
+        height: 93px;
         border: 1.5px solid rgba(0, 0, 0, 0.929);
         border-radius: 4px;
     }
 
     #cordel > img:hover{
         width: 85px;
-        
-        
+    }
+
+    #cordel > h2{
+        font-family: var(--fonte-cordel);
+        margin: 3px;
     }
 
 
     #social{
         display: inline-block;
         margin-top: 10px;
-        
+        margin-bottom: 60px;
     }
 
     #social > img{
         width: 80px;
-        height: 130px;
-        border: 2px solid rgba(0, 0, 0, 0.929);
+        height: 93px;
+        border: 1.5px solid rgba(0, 0, 0, 0.929);
         border-radius: 4px;
     }
 
     #social > img:hover{
         width: 85px;
-        height: 135px;
-        
-        
+    }
+
+    #social > h2{
+        font-family: var(--fonte-des);
+        margin: 0px;
+    }
+
+    footer{
+        margin-top: 100px;
+        padding: 2px;
+        background-color: #280248;
+        border-radius: 3px;
+    }
+
+    #footer > p {
+        font-family: var(--fonte-des);
+        color: white;
+        text-align: center;
+        margin: 3px;
+    }
+
+    #nome{
+        font-family: var(--fonte-des);
+        font-weight: bolder;
     }
 }
 
@@ -224,32 +270,40 @@
     h1{
         color: white;
         padding-left: 10px;
+        margin: 10px;
     }
 
     nav{
+        font-family: var(--fonte-des);
         background-color: #280248;
-        padding: 15px;
+        padding-bottom:25px;
+        padding-top: 5px;
         border-radius: 3px;
     }
-    nav > p{
+    
+    nav > div{
+        display: inline;
+        float: right;
         font-size: 13px;
         margin: 0px;
         text-align: right;
     }
 
-    
 
-    nav p > a{
-        padding-right: 20px;
+
+    nav div > a{
+        margin-right: 20px;
+        padding: 5px;
     }
 
-    nav > p > a:hover{
+    nav > div > a:hover{
         background-color: #ffffffe9;
         color: #280248;
-        padding: 5px;
         margin-right: 20px;
+        border: 1px solid black;
         border-radius: 3px;
     }
+
 
 
 
@@ -275,12 +329,15 @@
     }
 
     #redes{
+        font-family: var(--fonte-des);
+        font-weight: 400;
         padding-left: 10px;
         color: white;
         clear: both;
         padding-top: 60px;
     }
     .redes{
+        font-family: var(--fonte-sec);
         padding-left: 10px;
         clear: both;
         display: flex;
@@ -326,8 +383,10 @@
     }
 
     #projetos{
+        font-family: var(--fonte-des);
+        font-weight: 400;
         padding-top: 45px;
-        margin: 50px;
+        margin-top: 50px;
     }
 
     .card2{
@@ -339,6 +398,7 @@
         text-align: center;
         box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.219);
         margin-left: 25px;
+        
     
         
     }
@@ -359,8 +419,12 @@
 
     #android > img:hover{
         width: 156px;
-        
-        
+    }
+
+     #android > h2{
+        font-family: var(--fonte-android);
+        font-size: 20px;
+        margin: 3px;
     }
 
 
@@ -379,38 +443,61 @@
 
     #cordel > img:hover{
         width: 156px;
-        
-        
+    }
+
+    #cordel > h2{
+        font-family: var(--fonte-cordel);
+        margin: 3px;
     }
 
 
     #social{
         display: inline-block;
         margin-top: 10px;
-        
+        margin-bottom: 60px;
     }
 
     #social > img{
-        width: 158px;
-        height: 244px;
+        width: 150px;
         margin-top: 7px;
         margin-bottom: 7px;
-        border: 2px solid rgba(0, 0, 0, 0.929);
+        border: 1.5px solid rgba(0, 0, 0, 0.929);
         border-radius: 4px;
     }
 
     #social > img:hover{
         width: 156px;
-        height: 135px;
-        
-        
+    }
+
+    #social > h2{
+        font-family: var(--fonte-des);
+        margin: 0px;
+    }
+
+    footer{
+        margin-top: 100px;
+        padding: 2px;
+        background-color: #280248;
+        border-radius: 3px;
+    }
+
+    #footer > p {
+        font-family: var(--fonte-des);
+        color: white;
+        text-align: center;
+        margin: 3px;
+    }
+
+    #nome{
+        font-family: var(--fonte-des);
+        font-weight: bolder;
     }
 }
 
 
 
 
-@media (min-width: 800px) and (max-width: 1900px){
+@media (min-width: 1024px) and (max-width: 1920px){
 
        body{
         background-color:#1B0132;
@@ -422,11 +509,14 @@
     h1{
         color: white;
         padding-left: 10px;
+        margin: 10px;
     }
 
     nav{
+        font-family: var(--fonte-des);
         background-color: #280248;
-        padding: 15px;
+        padding-bottom: 25px;
+        padding-top: 5px;
         border-radius: 3px;
     }
     
@@ -479,12 +569,15 @@
     }
 
     #redes{
+        font-family: var(--fonte-des);
+        font-weight: 400;
         padding-left: 10px;
         color: white;
         clear: both;
         padding-top: 60px;
     }
     .redes{
+        font-family: var(--fonte-sec);
         padding-left: 10px;
         clear: both;
         display: flex;
@@ -530,8 +623,10 @@
     }
 
     #projetos{
+        font-family: var(--fonte-des);
+        font-weight: 400;
         padding-top: 45px;
-        margin: 50px;
+        margin-top: 50px;
     }
 
     .card2{
@@ -562,7 +657,13 @@
     }
 
     #android > img:hover{
-        width: 190px;
+        width: 176px;
+    }
+
+     #android > h2{
+        font-family: var(--fonte-android);
+        font-size: 20px;
+        margin: 3px;
     }
 
 
@@ -582,21 +683,25 @@
     
 
     #cordel > img:hover{
-        width: 190px;
-        
-        
+        width: 176px;
     }
+
+     #cordel > h2{
+        font-family: var(--fonte-cordel);
+        margin: 3px;
+    }
+
 
 
     #social{
         display: inline-block;
         margin-top: 10px;
+        margin-bottom: 60px;
         
     }
 
     #social > img{
-        width: 178px;
-        height: 276px;
+        width: 170px;
         margin-top: 7px;
         margin-bottom: 7px;
         border: 2px solid rgba(0, 0, 0, 0.929);
@@ -604,212 +709,34 @@
     }
 
     #social > img:hover{
-        width: 197px;
-        height: 295px;
-        
-        
+        width: 176px;
+    }
+
+    #social > h2{
+        font-family: var(--fonte-des);
+        margin: 0px;
+    }
+
+
+    footer{
+        margin-top: 100px;
+        padding: 2px;
+        background-color: #280248;
+        border-radius: 3px;
+    }
+
+    #footer > p {
+        font-family: var(--fonte-des);
+        color: white;
+        text-align: center;
+        margin: 3px;
+    }
+
+    #nome{
+        font-family: var(--fonte-des);
+        font-weight: bolder;
     }
 }
 
 
 
-body{
-        background-color:#1B0132;
-        padding: 0px;
-        margin: 0px;
-        
-    }
-
-    h1{
-        color: white;
-        padding-left: 10px;
-    }
-
-    nav{
-        background-color: #280248;
-        padding: 15px;
-        padding-bottom: 25px;
-        border-radius: 3px;
-    }
-    
-    nav > div{
-        display: inline;
-        float: right;
-        font-size: 13px;
-        margin: 0px;
-        text-align: right;
-    }
-
-
-
-    nav div > a{
-        margin-right: 20px;
-        padding: 5px;
-    }
-
-    nav > div > a:hover{
-        background-color: #ffffffe9;
-        color: #280248;
-        margin-right: 20px;
-        border: 1px solid black;
-        border-radius: 3px;
-    }
-
-
-    
-
-
-    .perfil{ 
-        padding-bottom: 65px;
-        padding-left: 20px;
-        margin: 20px;
-    }
-
-    .perfil > p{
-        margin: 0px;
-        width: 40px;
-        float: right;
-        text-align: left;
-        font-size: 12px;
-    }
-
-    #perfil{
-        margin-right: 45px;
-        clear: both;
-        width: 180px;
-        border: 1px solid white;
-        border-radius: 110px;
-        float: left;
-    }
-
-    #redes{
-        padding-left: 10px;
-        color: white;
-        clear: both;
-        padding-top: 60px;
-    }
-    .redes{
-        padding-left: 10px;
-        clear: both;
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
-    }
-
-
-    .card{
-        background-color: #200538;
-        border-radius: 8px;
-        padding: 10px;
-        width: 300px;
-        text-align: center;
-        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.219);
-        
-    }
-
-    .card > img{
-        width: 80px;
-        border: 1px solid white;
-        border-radius: 40px;
-        
-    }
-
-    #insta > img{
-        
-    }
-
-    a{
-        text-decoration: none;
-        color: white;
-
-    }
-
-
-    .fundo{
-        background-color: rgb(21, 0, 47);
-        color: white;
-        background-size: cover;
-        background-attachment: fixed;
-        background-image: url(imagens/fundo.jpg);
-    }
-
-    #projetos{
-        padding-top: 45px;
-        margin: 50px;
-    }
-
-    .card2{
-        background-image: linear-gradient(#200538, #29034a);
-        border-radius: 8px;
-        padding: 10px;
-        padding-left: 10px;
-        width: 240px;
-        text-align: center;
-        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.219);
-        margin-left: 25px;
-    
-        
-    }
-
-
-    #android{
-        display: inline-block;
-        
-    }
-
-    #android > img{
-        width: 170px;
-        margin-top: 7px;
-        margin-bottom: 7px;
-        border: 1.5px solid rgba(0, 0, 0, 0.929);
-        border-radius: 4px;
-    }
-
-    #android > img:hover{
-        width: 190px;
-    }
-
-
-    #cordel{
-        display: inline-block;
-        
-    }
-
-    #cordel > img{
-        width: 170px;
-        margin-top: 7px;
-        margin-bottom: 7px;
-        border: 1.5px solid rgba(0, 0, 0, 0.929);
-        border-radius: 4px;
-    }
-
-    
-
-    #cordel > img:hover{
-        width: 190px;
-        
-        
-    }
-
-
-    #social{
-        display: inline-block;
-        margin-top: 10px;
-        
-    }
-
-    #social > img{
-        width: 176px;
-        height: 197px;
-        margin-top: 7px;
-        margin-bottom: 7px;
-        border: 2px solid rgba(0, 0, 0, 0.929);
-        border-radius: 4px;
-    }
-
-    #social > img:hover{
-        width: 190px;
-        height: 211px;
-        
-        
-    }
