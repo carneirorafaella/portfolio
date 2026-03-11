@@ -23,6 +23,9 @@
     --fonte-cordel: "Passion One";
 }
 
+*{
+    box-sizing: border-box;
+}
 
 @media (min-width: 320px) and (max-width: 700px){
 
@@ -78,21 +81,21 @@
     }
 
     #apresentacao{
-        clear: both;
-        margin: 10px;
-        padding: 15px 10px 15px 10px;
-        background-color: #1e0535;
+        width: 55%;
+        float: right;
         font-family: var(--fonte-sec);
+        background-color: #1e0535;
         color: white;
+        padding: 10px;
+        border-radius: 10px;
 
     }
 
     #img{
+         width: 35%;
         float: left;
-        margin: 20px 45px 25px 20px;
-        width: 100px;
-        border: 1px solid white;
-        border-radius: 49px;
+        border-radius: 80px;
+        
     }
 
     #redes{
@@ -117,7 +120,7 @@
         background-color: #200538;
         border-radius: 8px;
         padding: 10px;
-        width: 70px;
+        width: 90px;
         text-align: center;
         box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.219);
         
@@ -158,7 +161,7 @@
         border-radius: 8px;
         padding: 10px;
         padding-left: 10px;
-        width: 95px;
+        width: 118px;
         text-align: center;
         box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.219);
         margin-left: 25px;
@@ -171,14 +174,13 @@
     }
 
     #android > img{
-        width: 80px;
-        height: 93px;
+        width: 85px;
         border: 1.5px solid rgba(0, 0, 0, 0.929);
         border-radius: 15px;
     }
 
     #android > img:hover{
-        width: 85px;
+        width: 90px;
     }
 
     #android > h2{
@@ -194,14 +196,13 @@
     }
 
     #cordel > img{
-        width: 80px;
-        height: 93px;
+        width: 85px;
         border: 1.5px solid rgba(0, 0, 0, 0.929);
         border-radius: 15px;
     }
 
     #cordel > img:hover{
-        width: 85px;
+        width: 90px;
     }
 
     #cordel > h2{
@@ -217,14 +218,13 @@
     }
 
     #social > img{
-        width: 80px;
-        height: 93px;
+        width: 85px;
         border: 1.5px solid rgba(0, 0, 0, 0.929);
         border-radius: 15px;
     }
 
     #social > img:hover{
-        width: 85px;
+        width: 90px;
     }
 
     #social > h2{
